@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>CodeQuest — The Coding RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ambient background layer -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+<div id="app" class="app"></div>
+
+<!-- Toast / level-up / achievement layer -->
+<div id="overlayLayer" class="overlay-layer" aria-live="polite"></div>
+
+<template id="tpl-toast">
+  <div class="toast">
+    <div class="toast-icon"></div>
+    <div class="toast-body">
+      <div class="toast-title"></div>
+      <div class="toast-sub"></div>
+    </div>
+  </div>
+</template>
+
+<script src="js/validators.js"></script>
+<script src="js/data-web.js"></script>
+<script src="js/data-java.js"></script>
+<script src="js/state.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
